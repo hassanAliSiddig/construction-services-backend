@@ -1,0 +1,116 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7003"
+  },
+
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/auth/{everything}",
+      "UpstreamHttpMethod": [ "POST", "GET" ],
+      "DownstreamPathTemplate": "/api/auth/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7001
+        }
+      ]
+    },
+    //{
+    //  "UpstreamPathTemplate": "/api/auth/refresh-access-token",
+    //  "UpstreamHttpMethod": [ "GET" ],
+    //  "DownstreamPathTemplate": "/api/auth/refresh-access-token",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7001
+    //    }
+    //  ]
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/auth/logout",
+    //  "UpstreamHttpMethod": [ "GET" ],
+    //  "DownstreamPathTemplate": "/api/auth/logout",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7001
+    //    }
+    //  ]
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/auth/set-admin-user",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/auth/set-admin-user",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7001
+    //    }
+    //  ]
+    //},
+    {
+      "UpstreamPathTemplate": "/api/construction/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST" ],
+      "DownstreamPathTemplate": "/api/construction/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7002
+        }
+      ]
+    },
+    //{
+    //  "UpstreamPathTemplate": "/api/construction/get-client-by-user-id",
+    //  "UpstreamHttpMethod": [ "GET" ],
+    //  "DownstreamPathTemplate": "/api/construction/get-client-by-user-id",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7002
+    //    }
+    //  ]
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/construction/submit-construction-request",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/construction/submit-construction-request",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7002
+    //    }
+    //  ]
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/construction/update-construction-request",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/construction/update-construction-request",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7002
+    //    }
+    //  ]
+    //},
+    //{
+    //  "UpstreamPathTemplate": "/api/construction/make-payment/{everything}",
+    //  "UpstreamHttpMethod": [ "POST" ],
+    //  "DownstreamPathTemplate": "/api/construction/make-payment/{everything}",
+    //  "DownstreamScheme": "https",
+    //  "DownstreamHostAndPorts": [
+    //    {
+    //      "Host": "localhost",
+    //      "Port": 7002
+    //    }
+    //  ]
+    //}
+  ]
+}
